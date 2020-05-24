@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Formulier</title>
+  </head>
+  <body>
+    <div id="kiestaal">
+    <h1>Kies hier de taal voor uw formulier!</h1>
+    <form method="post" onsubmit="return false">
+      <input type="button" id="nederlands" value="Nederlands"></input>
+      <button id="engels">Engels</button>
+    </form>
+  </div>
+  <div id="ned" hidden=true>
+    <h1>Nederlandse formulier</h1>
+    <form method="post" onsubmit="return false">
+      <input class="male" type="radio" name="Gender" value="Male">Dhr.</input>
+      <input class="female" type="radio" name="Gender" value="Female">Mevr.</input><br/>
+      <table>
+        <tr>
+          <td id="0" class="nedtext"></td>
+          <td class="input"><input type="text" class="ned" id="name" name="naam" required/></td>
+        </tr>
+        <tr>
+          <td id="1" class="nedtext"></td>
+          <td class="input"><input type="text" class="ned" id="address" name="adres" required/></td>
+        </tr>
+        <tr>
+          <td id="2" class="nedtext"></td>
+          <td class="input"><input type="text" class="ned" id="place" name="woonplaats" required/></td>
+        </tr>
+        <tr>
+          <td id="3" class="nedtext"></td>
+          <td class="input"><input type="text" class="ned" id="post" name="postcode" required/></td>
+        </tr>
+        <tr>
+          <td id="4" class="nedtext"></td>
+          <td class="input"><input type="date" class="ned" id="date" name="geboortedatum"required /> <span id="oud" hidden=true/></td>
+        </tr>
+        <tr>
+          <td id="5" class="nedtext"></td>
+          <td class="input"><input type="text" class="ned" id="nation" name="nationaliteit" required/></td>
+        </tr>
+        <tr>
+          <td id="6" class="nedtext"></td>
+          <td class="input"><input type="text" class="ned" id="beroep" name="beroep" required/></td>
+        </tr>
+        <tr>
+          <td id="7" class="nedtext"></td>
+          <td class="input"><textarea id="opmerking" name="opmerking"></textarea></td>
+        </tr>
+      </table>
+      <input id="nedbutton" type="submit" value="Submit"></button>
+    </form>
+  </div>
+  <div id="eng" hidden=true>
+    <h1>English form</h1>
+    <form method="post" onsubmit="return false">
+      <input class="male" type="radio" name="Gender" value="Male">Mr.</input>
+      <input class="female" type="radio" name="Gender" value="Female">Miss.</input><br/>
+      <table>
+        <tr>
+          <td id="8" class="engtext"></td>
+          <td class="input"><input type="text" id="engname" name="naam" required/></td>
+        </tr>
+        <tr>
+          <td id="9" class="engtext"></td>
+          <td class="input"><input type="text" id="engaddress" name="adres" required/></td>
+        </tr>
+        <tr>
+          <td id="10" class="engtext"></td>
+          <td class="input"><input type="text" id="engplace" name="woonplaats" required/></td>
+        </tr>
+        <tr>
+          <td id="11" class="engtext"></td>
+          <td class="input"><input type="text" id="engpost" name="postcode" required/></td>
+        </tr>
+        <tr>
+          <td id="12" class="engtext"></td>
+          <td class="input"><input type="date" id="engdate" name="geboortedatum" required/> <span id="engoud" hidden=true/></td>
+        </tr>
+        <tr>
+          <td id="13" class="engtext"></td>
+          <td class="input"><input type="text" id="engnation" name="Nation" required/></td>
+        </tr>
+        <tr>
+          <td id="14" class="engtext"></td>
+          <td class="input"><input type="text" id="engberoep"name="work" required/></td>
+        </tr>
+        <tr>
+          <td id="15" class="engtext"></td>
+          <td class="input"><textarea id="engopmerking" name="comments"></textarea></td>
+        </tr>
+      </table>
+      <input id="engbutton" type="submit" value="Submit"></button>
+    </form>
+  </div>
+  </body>
+  <script src="js2.js"></script>
+</html>
