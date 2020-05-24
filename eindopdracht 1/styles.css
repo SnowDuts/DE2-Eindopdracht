@@ -1,0 +1,42 @@
+body{
+	background-color: lightskyblue;
+}
+	
+#leftDiv {
+	border-style: solid;
+	border-width: 5px;
+	width: 200px;
+	height: 300px
+	;position: absolute;
+	top: 75px;
+	left: 5px;
+	background-color: yellow;
+}
+		
+#rightDiv {
+	border-style: solid;
+	border-width: 5px;
+	width: 200px;
+	height: 300px;
+position: absolute;
+	top: 75px;
+	left: 475px;
+	background-color: pink;
+}
+		
+#naarLinks{
+	position: absolute;
+	left: 300px;
+	right: 300px;
+}
+
+#naarRechts {
+	position: absolute;
+	left: 300px;
+	right: 300px;
+}
+
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
